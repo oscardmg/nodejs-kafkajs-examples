@@ -1,0 +1,13 @@
+{
+  "name": "my-kafka-consumer",
+  "version": "1.0.0",
+  "description": "A Kafka consumer using kafkajs",
+  "main": "src/2-consumer-autocommit.js",
+  "scripts": {
+    "start": "node src/consumer.js"
+  },
+  "dependencies": {
+    "kafkajs": "^1.15.0",
+    "winston": "^3.11.0"
+  }
+}
