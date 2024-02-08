@@ -67,6 +67,7 @@ const run = async () => {
                 if (!isRunning() || isStale()) break
     
                 resolveOffset(message.offset) // se utiliza para marcar un mensaje del lote como procesado. En caso de error, el consumidor consignará automáticamente las compensaciones resueltas.
+                
                 await heartbeat() // Promise<void> se puede utilizar para enviar heartbeat al broker según el valor heartbeatInterval establecido en la configuración del consumidor, lo que significa que si invocas heartbeat() antes que heartbeatInterval será ignorado
             }
         },

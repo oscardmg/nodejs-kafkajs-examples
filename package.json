@@ -7,6 +7,7 @@
     "start": "node src/consumer.js"
   },
   "dependencies": {
+    "ip": "^1.1.8",
     "kafkajs": "^1.15.0",
     "winston": "^3.11.0"
   }
